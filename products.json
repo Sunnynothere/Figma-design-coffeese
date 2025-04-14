@@ -1,0 +1,84 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "COFFEESE COLOMBIA",
+        "origin": "Colombia",
+        "weight": "250 GR",
+        "price": 24.00,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "A medium roast with notes of caramel and citrus."
+      },
+      {
+        "id": 2,
+        "name": "COFFEESE VIETNAM",
+        "origin": "Vietnam",
+        "weight": "250 GR",
+        "price": 22.50,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Bold and robust with chocolate undertones, perfect for strong coffee lovers."
+      },
+      {
+        "id": 3,
+        "name": "COFFEESE BRAZIL",
+        "origin": "Brazil",
+        "weight": "250 GR",
+        "price": 23.00,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Nutty flavor profile with low acidity and a smooth finish."
+      },
+      {
+        "id": 4,
+        "name": "COFFEESE THAILAND",
+        "origin": "Thailand",
+        "weight": "250 GR",
+        "price": 25.50,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Exotic with hints of spice and tropical fruit notes."
+      },
+      {
+        "id": 5,
+        "name": "COFFEESE COSTA RICA",
+        "origin": "Costa Rica",
+        "weight": "250 GR",
+        "price": 26.00,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Bright and clean with a honey sweetness and mild acidity."
+      },
+      {
+        "id": 6,
+        "name": "COFFEESE PHILIPPINES",
+        "origin": "Philippines",
+        "weight": "250 GR",
+        "price": 24.50,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Earthy with a full body and subtle notes of dark chocolate."
+      },
+      {
+        "id": 7,
+        "name": "COFFEESE GUATEMALA",
+        "origin": "Guatemala",
+        "weight": "250 GR",
+        "price": 25.00,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Complex flavor with floral notes and a spicy finish."
+      },
+      {
+        "id": 8,
+        "name": "COFFEESE INDONESIA",
+        "origin": "Indonesia",
+        "weight": "250 GR",
+        "price": 23.50,
+        "currency": "$",
+        "image": "/assets/coffee-bags-indoors-branding-concept.jpg",
+        "description": "Rich and earthy with low acidity and a syrupy body."
+      }
+    ]
+  }
