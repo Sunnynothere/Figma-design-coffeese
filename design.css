@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+header {
+  background-color: #ffffff;
+  padding: 15px 0;
+}
+header .container-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-nav img {
+  height: 40px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.main-nav li {
+  margin-left: 30px;
+}
+.main-nav li:first-child {
+  margin-left: 0;
+}
+.main-nav a {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-size: 16px;
+}
+
+.home-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home-div > div:first-child {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-div > div:first-child h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.home-div > div:first-child h3 {
+  font-family: "Poppins", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.home-div > div:first-child button {
+  background-color: #F9C270;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.home-div > div:first-child button:hover {
+  background-color: #f7ad3f;
+}
+.home-div > div:first-child button a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Poppins", serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.home-img {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.home-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-img img:first-child {
+  margin-bottom: 2rem;
+}
+.home-img img:last-child {
+  margin-top: 2rem;
+}
+
+.quote {
+  grid-column: 1/span 2;
+  grid-row: 2;
+  text-align: center;
+  margin-top: 2rem;
+}
+.quote h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.products-section {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.products-section .section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.products-section .products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1024px) {
+  .products-section .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .products-section .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .products-section .products {
+    grid-template-columns: 1fr;
+  }
+}
+.products-section .products .product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.products-section .products .product-card:hover {
+  transform: translateY(-5px);
+}
+.products-section .products .product-card .product-img {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+.products-section .products .product-card .product-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 1.5rem;
+  border-radius: 8px 8px 0 0;
+}
+.products-section .products .product-card .product-info {
+  padding: 2rem 0.5rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.products-section .products .product-card .product-info h3 {
+  font-family: "Poppins", serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 auto 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  max-width: 100%;
+}
+.products-section .products .product-card .product-info .product-weight {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 auto 0.5rem;
+  font-family: "Poppins", serif;
+  max-width: 100%;
+}
+.products-section .products .product-card .product-info .product-price {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: black;
+  font-family: "Poppins", serif;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.process-gallery {
+  padding: 4rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.process-gallery .section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.process-gallery .gallery-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .process-gallery .gallery-container {
+    flex-direction: column;
+  }
+}
+.process-gallery .gallery-container .gallery-main {
+  flex: 1;
+}
+.process-gallery .gallery-container .gallery-main img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.process-gallery .gallery-container .gallery-thumbnails {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.process-gallery .gallery-container .gallery-thumbnails .thumbnail {
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+}
+.process-gallery .gallery-container .gallery-thumbnails .thumbnail img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.process-gallery .gallery-container .gallery-thumbnails .thumbnail:hover img {
+  transform: scale(1.05);
+}
+.process-gallery .gallery-container .gallery-thumbnails .thumbnail.active {
+  outline: 2px solid #E94B35;
+}
+
+footer {
+  padding: 4rem 5%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .contact-info {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 3rem;
+}
+footer .contact-info ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  footer .contact-info ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+footer .contact-info ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  footer .contact-info ul li {
+    width: 100%;
+  }
+}
+footer .contact-info ul li .icon {
+  margin-bottom: 1rem;
+}
+footer .contact-info ul li img {
+  width: 24px;
+  height: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .contact-info ul h4 {
+  color: #dd4124;
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: 1px;
+}
+footer .contact-info ul p {
+  color: #dd4124;
+  font-family: "Playfair Display", serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+footer .logo-container {
+  margin-top: 1rem;
+}
+footer .logo-container img {
+  width: 12rem;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header .container-nav {
+    flex-direction: column;
+  }
+  .logo-nav {
+    margin-bottom: 15px;
+  }
+  .main-nav ul {
+    justify-content: center;
+  }
+  .main-nav ul li {
+    margin: 0 15px;
+  }
+  .home-div {
+    grid-template-columns: 1fr;
+  }
+  .home-div > div:first-child {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+  .home-div .home-img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .home-div .quote {
+    grid-column: 1;
+    grid-row: 3;
+  }
+}/*# sourceMappingURL=design.css.map */
