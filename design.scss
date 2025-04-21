@@ -55,6 +55,8 @@ header {
     }
 }
 
+// HOME
+
 .home-div {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -132,6 +134,7 @@ header {
     }
 }
 
+
 // Quote
 
 .quote {
@@ -201,6 +204,7 @@ header {
           position: relative;
           background-color: $white;
           margin: 0 auto; 
+          aspect-ratio: 1 / 1;
           
           img {
             position: absolute;
@@ -213,6 +217,8 @@ header {
             object-fit: contain;
             padding: 1.5rem;
             border-radius: 8px 8px 0 0;
+            object-fit: cover;
+            object-position: 10px 100%;
           }
         }
         
@@ -221,7 +227,15 @@ header {
           text-align: center;
           width: 100%;
           box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
           
+            h3, .product-weight, .product-price {
+                margin: 0 auto 0.5rem;
+                max-width: 100%;
+            }
+
           h3 {
             font-family: $secondary-font;
             font-size: 0.9rem;
